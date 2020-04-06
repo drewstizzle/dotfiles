@@ -14,6 +14,8 @@ Plug 'kristijanhusak/defx-icons'
 Plug 'rbong/vim-crystalline'
 Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'airblade/vim-rooter'
+Plug 'tpope/vim-surround'
+Plug 'jiangmiao/auto-pairs'
 "Plug 'kassio/neoterm'
 "Plug 'moll/vim-bbye'
 "Plug 'qpkorr/vim-bufkill'

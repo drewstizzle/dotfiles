@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/.local/bin:$HOME/venv/bin
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/chq-andrewn/.oh-my-zsh"
+export ZSH="/home/drew/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -118,9 +118,6 @@ SAVEHIST=10000
 
 # Enable python environment
 source activate
-
-# Enable tmux
-tmux
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

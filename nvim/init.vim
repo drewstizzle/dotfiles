@@ -1,11 +1,11 @@
 "" Plugin Configuration Files
-source plugins.vimrc
-source nvim.vimrc
-source pandoc.vimrc
-source coc.vimrc
-source defx.vimrc
-source vim-crystalline.vimrc
-source keybindings.vimrc
-source nerdcommment.vimrc
-source denite.vimrc
-source gitgutter.vimrc
+source $HOME/.config/nvim/plugins.vimrc
+source $HOME/.config/nvim/nvim.vimrc
+source $HOME/.config/nvim/pandoc.vimrc
+source $HOME/.config/nvim/coc.vimrc
+source $HOME/.config/nvim/defx.vimrc
+source $HOME/.config/nvim/vim-crystalline.vimrc
+source $HOME/.config/nvim/keybindings.vimrc
+source $HOME/.config/nvim/nerdcommment.vimrc
+source $HOME/.config/nvim/denite.vimrc
+source $HOME/.config/nvim/gitgutter.vimrc
