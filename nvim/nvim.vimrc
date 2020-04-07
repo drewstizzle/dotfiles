@@ -25,3 +25,4 @@ set hlsearch
 hi Search ctermfg=DarkGreen
 
 
+" TODO: list stuff

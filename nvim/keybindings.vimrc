@@ -38,17 +38,41 @@ let g:which_key_map.c = {
     \ 'd' : ['<Plug>(coc-definition)'               , 'coc-definition']      ,
     \ 'r' : ['<Plug>(coc-references)'               , 'coc-references']      ,
     \ 'c' : ['<Plug>NERDCommenterComment'           , 'comment line(s)']      ,
-    \ 'p' : ['<Plug>NERDCommenterUnComment'         , 'uncomment line(s)']      ,
+    \ 'u' : ['<Plug>NERDCommenterUncomment'         , 'uncomment line(s)']      ,
+    \ }
+
+" Required Plugins:
+" denite
+let g:which_key_map.d = { 
+    \ 'name': 'denite'   ,
+    \ 'm' : [':Denite menu'    , 'denite-menu']      ,
     \ }
 
 " Required Plugins:
 " defx
 let g:which_key_map.f = { 
     \ 'name': 'file'   ,
-    \ 'o' : ['Defx'    , 'open-file-tree']      ,
-    \ '/' : [':Denite -start-filter file/rec'     , 'search-files-denite']      ,
+    \ 'o' : [':Defx -columns=git:mark:filename:type'    , 'open-file-tree']      ,
+    \ '/' : [':Denite -start-filter buffer file/rec line'          , 'search-files-denite']      ,
     \ }
 
+" Required Plugins:
+" vim-fugitive
+let g:which_key_map.g = { 
+    \ 'name': 'git'      ,
+    \ 'd' : [':Gdiff'        , 'git-diff']      ,
+    \ 's' : [':Git'          , 'git-status']      ,
+    \ 'l' : [':Gclog'        , 'git-log']      ,
+    \ 'c' : [':Git commit'   , 'git-commit']      ,
+    \ }
+
+" Required Plugins:
+" denite-dirmark
+let g:which_key_map.p = { 
+    \ 'name': 'projects'   ,
+    \ 'o' : [':Denite dirmark'    , 'open-project-locations']      ,
+    \ 'a' : [':Denite dirmark/add'   , 'add-project-locations']      ,
+    \ }
 
 " Unable to figure out how to separate the mapping and function
 nnoremap <silent> K :call <SID>show_documentation()<CR>
@@ -142,5 +166,8 @@ function! s:denite_my_settings() abort
   \ denite#do_map('open_filter_buffer')
   nnoremap <silent><buffer><expr> <Space>
   \ denite#do_map('toggle_select').'j'
-endfunction
-
+  nnoremap <silent><buffer><expr> a
+  \ denite#do_map('do_action', 'add')
+  nnoremap <silent><buffer><expr> d
+  \ denite#do_map('do_action', 'delete')
+endfunction 

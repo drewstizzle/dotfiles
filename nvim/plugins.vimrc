@@ -1,22 +1,38 @@
 call plug#begin('~/.nvim/plugged')
-Plug 'liuchengxu/vim-which-key'
+" Color Scheme
 Plug 'https://github.com/morhetz/gruvbox.git'
-Plug 'neovim/nvim-lsp'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'psf/black'
-Plug 'preservim/nerdcommenter'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'airblade/vim-gitgutter'
-Plug 'vim-pandoc/vim-pandoc-syntax'
-Plug 'Vimjas/vim-python-pep8-indent'
-Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'kristijanhusak/defx-icons'
-Plug 'rbong/vim-crystalline'
+" Menu Space bar
+Plug 'liuchengxu/vim-which-key'
+" Denite - Fuzzy Search
 Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'kmnk/denite-dirmark'
 Plug 'airblade/vim-rooter'
+" Status Line
+Plug 'rbong/vim-crystalline'
+" Code 
 Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neovim/nvim-lsp'
+Plug 'psf/black'
+Plug 'preservim/nerdcommenter'
+Plug 'vim-pandoc/vim-pandoc-syntax'
+Plug 'Vimjas/vim-python-pep8-indent'
+" Defx - File Explorer
+Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'kristijanhusak/defx-git'
+Plug 'kristijanhusak/defx-icons'
+" Git 
+Plug 'tpope/vim-fugitive'
+Plug 'rhysd/git-messenger.vim'
+Plug 'airblade/vim-gitgutter'
+" Old Plugins
+"Plug 'dunstontc/projectile.nvim'
+"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+"Plug 'liuchengxu/vim-clap'
+"Plug 'dracula/vim', { 'as': 'dracula' }
 "Plug 'kassio/neoterm'
+"Plug 'ncm2/float-preview.nvim'
 "Plug 'moll/vim-bbye'
 "Plug 'qpkorr/vim-bufkill'
 "Plug 'mengelbrecht/lightline-bufferline'

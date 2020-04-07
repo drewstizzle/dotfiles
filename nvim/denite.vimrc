@@ -6,30 +6,35 @@ call denite#custom#var('file/rec', 'command', ['ag', '--follow', '--nocolor',
     \'--hidden', '--ignore', '.git', '--ignore', 'trash', '--ignore',
     \'venv', '--ignore','.vim', '--ignore', '.local', '--nogroup', '-g', ''])
 
-
-"call denite#custom#option('default', 'prompt', 'λ', {
 call denite#custom#option('_', {
-      \ 'floating_preview': v:true,
       \ 'prompt':'λ',
+      \ 'floating_preview': v:true,
       \ 'preview_width': 10,
       \ 'split': 'floating',
-      \ 'winheight': 20,
-      \ 'winrow': 20,
-      \ 'wincol': 20,
-      \ 'winwidth': 140,
+      \ 'winheight': 40*winheight(0)/100,
+      \ 'winrow': 20*winheight(0)/100,
+      \ 'wincol': &columns/8,
+      \ 'winwidth': &columns / 2 + &columns/4 ,
       \ })
 
-call denite#custom#var('grep', 'command', ['ag'])
-call denite#custom#var('grep', 'default_opts', ['-i', '--vimgrep'])
-call denite#custom#var('grep', 'recursive_opts', [])
-call denite#custom#var('grep', 'pattern_opt', [])
-call denite#custom#var('grep', 'separator', ['--'])
-call denite#custom#var('grep', 'final_opts', [])
-call denite#custom#source('file_rec', 'sorters', ['sorter_sublime'])
-call denite#custom#filter('matcher/ignore_globs', 'ignore_globs',
-      \ [ '.git/', '.ropeproject/', '__pycache__/*', '*.pyc', 'node_modules/',
-      \   'venv/', 'images/', '*.min.*', 'img/', 'fonts/', '*.png', '.cache/',
-      \   'trash/', '*.npm/*', 'hugo/'])
 
+" Add custom menus
+let s:menus = {}
 
+let s:menus.zsh = {
+	\ 'description': 'Edit your import zsh configuration'
+	\ }
+let s:menus.zsh.file_candidates = [
+	\ ['zshrc', '~/./zshrc'],
+	\ ]
 
+let s:menus.my_commands = {
+	\ 'description': 'Example commands'
+	\ }
+let s:menus.my_commands.command_candidates = [
+	\ ['Split the window', 'vnew'],
+	\ ['Open zsh menu', 'Denite menu:zsh'],
+	\ ['Format code', 'FormatCode', 'go,python'],
+	\ ]
+
+call denite#custom#var('menu', 'menus', s:menus)
