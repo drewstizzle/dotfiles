@@ -2,11 +2,9 @@
 "
 "
 call denite#custom#var('file/rec', 'command', ['ag', '--follow', '--nocolor',
-            \'--ignore', 'hugo', '--ignore', '.cache', '--ignore', '.npm',
-            \'--hidden', '--ignore', '.git', '--ignore', 'trash', '--ignore',
-            \'venv', '--ignore','.vim', '--ignore', '.local', '--nogroup', '-g', ''])
-"'--ignore','.cache','--ignore','.npm','--ignore',
-  "          \   'git', '--ignore','.git', ''])
+    \'--ignore', 'hugo', '--ignore', '.cache', '--ignore', '.npm',
+    \'--hidden', '--ignore', '.git', '--ignore', 'trash', '--ignore',
+    \'venv', '--ignore','.vim', '--ignore', '.local', '--nogroup', '-g', ''])
 
 
 "call denite#custom#option('default', 'prompt', 'λ', {
