@@ -11,18 +11,19 @@ filetype plugin on
 set background=dark
 set mouse=a
 set showtabline=2
+set encoding=utf-8
 
 " Color Scheme
 colorscheme gruvbox
 let g:gruvbox_contrast_dark='dark'
+set hlsearch
+hi Search ctermfg=DarkGreen
 
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 "Turn on syntax highlighting
 syntax enable
 highlight clear SignColumn
 set timeoutlen=500
-set hlsearch
-hi Search ctermfg=DarkGreen
 
 
 " TODO: list stuff
