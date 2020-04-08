@@ -24,14 +24,14 @@ Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'Vimjas/vim-python-pep8-indent'
 " Defx - File Explorer
 Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'kristijanhusak/defx-git'
 Plug 'kristijanhusak/defx-icons'
 " Git 
-Plug 'tpope/vim-fugitive'
 Plug 'rhysd/git-messenger.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'kdheepak/lazygit.vim'
 " Old Plugins
+"Plug 'kristijanhusak/defx-git'
+"Plug 'tpope/vim-fugitive'
 "Plug 'dunstontc/projectile.nvim'
 "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 "Plug 'liuchengxu/vim-clap'
