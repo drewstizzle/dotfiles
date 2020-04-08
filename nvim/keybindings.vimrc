@@ -59,11 +59,7 @@ let g:which_key_map.f = {
 " Required Plugins:
 " vim-fugitive
 let g:which_key_map.g = { 
-    \ 'name': 'git'      ,
-    \ 'd' : [':Gdiff'        , 'git-diff']      ,
-    \ 's' : [':Git'          , 'git-status']      ,
-    \ 'l' : [':Gclog'        , 'git-log']      ,
-    \ 'c' : [':Git commit'   , 'git-commit']      ,
+    \ 'g' : [':LazyGit'        , 'lazy-git']      ,
     \ }
 
 " Required Plugins:
