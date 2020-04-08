@@ -7,4 +7,3 @@
 * tmux
 * Coc-python (Install with :CocInstall)
 * Git
-* LazyGit
