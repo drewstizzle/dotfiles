@@ -53,12 +53,13 @@ let g:which_key_map.d = {
 let g:which_key_map.f = { 
     \ 'name': 'file'   ,
     \ 'o' : [':Defx -columns=git:mark:filename:type'    , 'open-file-tree']      ,
-    \ '/' : [':Denite -start-filter buffer file/rec line'          , 'search-files-denite']      ,
+    \ '/' : [':Denite -start-filter file/rec line'          , 'search-files-denite']      ,
     \ }
 
 " Required Plugins:
-" vim-fugitive
+" lazygit
 let g:which_key_map.g = { 
+    \ 'name': 'git'   ,
     \ 'g' : [':LazyGit'        , 'lazy-git']      ,
     \ }
 

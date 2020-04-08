@@ -2,7 +2,9 @@
 
 
 ### Requirements
-oh-my-zsh
-neovim
-tmux
-Coc-python
+* oh-my-zsh
+* neovim
+* tmux
+* Coc-python
+* Updated Version of Git
+* LazyGit
