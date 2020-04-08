@@ -5,6 +5,6 @@
 * oh-my-zsh
 * neovim
 * tmux
-* Coc-python
-* Updated Version of Git
+* Coc-python (Install with :CocInstall)
+* Git
 * LazyGit
