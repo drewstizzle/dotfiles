@@ -8,9 +8,6 @@ Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'kmnk/denite-dirmark'
 Plug 'airblade/vim-rooter'
 " Status Line
-"Plug 'rbong/vim-crystalline'
-"Plug 'itchyny/lightline.vim'
-"Plug 'mengelbrecht/lightline-bufferline'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " Code 
@@ -30,6 +27,12 @@ Plug 'rhysd/git-messenger.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'kdheepak/lazygit.vim'
 " Old Plugins
+"Plug 'prabirshrestha/async.vim'
+"Plug 'prabirshrestha/vim-lsp'
+"Plug 'mattn/vim-lsp-settings'
+"Plug 'rbong/vim-crystalline'
+"Plug 'itchyny/lightline.vim'
+"Plug 'mengelbrecht/lightline-bufferline'
 "Plug 'kristijanhusak/defx-git'
 "Plug 'tpope/vim-fugitive'
 "Plug 'dunstontc/projectile.nvim'
