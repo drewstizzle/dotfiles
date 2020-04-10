@@ -52,7 +52,7 @@ let g:which_key_map.d = {
 " defx
 let g:which_key_map.f = { 
     \ 'name': 'file'   ,
-    \ 'o' : [':Defx -columns=git:mark:filename:type'    , 'open-file-tree']      ,
+    \ 'o' : [':Defx -columns=icons:indent:filename:type'    , 'open-file-tree']      ,
     \ '/' : [':Denite -start-filter file/rec line'          , 'search-files-denite']      ,
     \ }
 
