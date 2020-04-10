@@ -7,7 +7,7 @@ call defx#custom#option('_', {
       \ 'direction': 'topleft',
       \ 'show_ignored_files': 1,
       \ 'buffer_name': 'defxplorer',
-      \ 'columns': 'icon:indent:icons:filename',
+      \ 'columns': 'icons:indent:filename:type',
       \ 'toggle': 1,
       \ 'resume': 1,
       \ })
