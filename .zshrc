@@ -122,7 +122,7 @@ source activate
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # ZSH Auto-suggestion
-ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+ZSH_AUTOSUGGEST_STRATEGY=(completion)
 ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 ZSH_AUTOSUGGEST_USE_ASYNC=True
 
